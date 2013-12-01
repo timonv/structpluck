@@ -1,5 +1,7 @@
 # Structpluck
 
+<img src=https://travis-ci.org/timonv/structpluck.png></img>
+
 A very simple gem that allows you to pluck to structs instead of ugly multidimensional arrays. Still very fast, but at least you'll get a rigid data type. :-)
 
 ## Installation
