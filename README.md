@@ -1,12 +1,12 @@
-# Activerecord::Structpluck
+# Structpluck
 
-TODO: Write a gem description
+A very simple gem that allows you to pluck to structs instead of ugly multidimensional arrays. Still very fast, but at least you'll get a rigid data type. :-)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'activerecord-structpluck'
+    gem 'structpluck'
 
 And then execute:
 
@@ -14,11 +14,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install activerecord-structpluck
+    $ gem install structpluck
 
 ## Usage
 
-TODO: Write usage instructions here
+Include it in your active record class and then:
+
+```ruby
+YourClass.where(query).struct_pluck(*column_names) # => SO MANY STRUCTS
+```
 
 ## Contributing
 
