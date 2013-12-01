@@ -11,7 +11,7 @@ def setup_schema_and_database
   ActiveRecord::Base.establish_connection(
     :adapter => "sqlite3",
     :dbfile  => ":memory:",
-    :database => "test_structp"
+    :database => "tmp/test_structp"
   )
 
   ActiveRecord::Base.connection.drop_table :test_classes rescue nil
